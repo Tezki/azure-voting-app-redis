@@ -7,5 +7,10 @@ pipeline {
             echo "$GIT_BRANCH"
          }
       }
+      stage('Hello World') {
+         steps {
+            sh 'echo "Hello World"'
+         }
+      }
    }
 }
